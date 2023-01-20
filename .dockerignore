@@ -1,0 +1,18 @@
+
+**/.git
+
+**/Dockerfile
+**/.dockerignore
+**/node_modules
+**/npm-debug.log
+**/README.md
+**/.next
+
+# yarn workspaces should only exist at root level
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

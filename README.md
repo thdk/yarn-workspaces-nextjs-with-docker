@@ -18,3 +18,10 @@ This is a research repo to investigate methods and best practices on how a nextj
     └── README.md
     ├── yarn.lock
 
+## Run nextjs app with docker
+
+```sh
+docker build -t next-js-yarn-workspaces -f packages/nextjs-app/Dockerfile .
+docker run --rm --publish 3000:3000 -e HOSTNAME=localhost next-js-yarn-workspaces
+
+```
