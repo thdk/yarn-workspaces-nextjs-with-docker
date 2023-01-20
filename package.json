@@ -1,0 +1,15 @@
+{
+  "name": "yarn-workspaces-nextjs-with-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thomas Dekiere",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces foreach --topological --verbose run build"
+  },
+  "workspaces": [
+    "**/packages/*"
+  ],
+  "packageManager": "yarn@3.3.1"
+}
